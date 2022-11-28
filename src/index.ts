@@ -11,6 +11,4 @@ export { MyCounter };
 // export { Icon };
 // export { default as AddIcon } from "./icons/Add";
 
-// ICON
-export { default as Icon } from "./components/Icon/Icon";
-export type { IconProps } from "./components/Icon";
+
