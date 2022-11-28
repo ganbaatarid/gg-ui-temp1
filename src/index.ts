@@ -9,9 +9,8 @@ export { MyCounter };
 
 // import Icon from "./components/Icon/IconsList/Add";
 // export { Icon };
-export { default as AddIcon } from "./icons/Add";
-
+// export { default as AddIcon } from "./icons/Add";
 
 // ICON
-export { default as Icon } from './components/Icon/Icon'
-export type { IconProps } from './components/Icon'
+export { default as Icon } from "./components/Icon/Icon";
+export type { IconProps } from "./components/Icon";
