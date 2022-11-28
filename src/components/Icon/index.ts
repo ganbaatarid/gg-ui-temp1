@@ -1,1 +1,1 @@
-export * from './IconsList/Add'
+export * from "./IconsList/Add";

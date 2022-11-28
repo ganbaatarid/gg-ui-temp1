@@ -7,6 +7,5 @@ export { MyCounter };
 // export { default as Icon } from './components/Icon/Icon'
 // export type { IconProps } from './components/Icon'
 
-import Icon from './components/Icon/IconsList/Add';
+import Icon from "./components/Icon/IconsList/Add";
 export { Icon };
-
