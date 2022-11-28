@@ -15,6 +15,6 @@
         "react-dom": "^18.2.0"
     },
     "dependencies": {
-        "gg-ui-temp1": "^1.2.7"
+        "gg-ui-temp1": "^1.2.8"
     }
 }
