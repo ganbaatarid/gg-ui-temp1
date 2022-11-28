@@ -5,6 +5,10 @@
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",
   "types": "./dist/esm/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ganbaatarid/gg-ui-temp1.git"
+  },
   "scripts": {
     "build": "yarn build:esm && yarn build:cjs",
     "build:esm": "tsc",
@@ -15,9 +19,21 @@
     "prepare": "npm run build",
     "prepublishOnly": "npm test && npm run prettier && npm run lint"
   },
-  "keywords": [],
-  "author": "ganbaatar",
-  "license": "ISC",
+  "peerDependencies": {
+    "react": ">=16"
+  },
+  "files": [
+    "dist",
+    "LICENSE",
+    "README.md"
+  ],
+  "keywords": [
+    "react",
+    "typescript",
+    "awesome-project"
+  ],
+  "author": "ganbaatar uu",
+  "license": "MIT",
   "devDependencies": {
     "@testing-library/react": "^13.4.0",
     "@types/jest": "^29.2.3",
