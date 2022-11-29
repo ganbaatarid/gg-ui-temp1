@@ -21,7 +21,6 @@ export const Page: React.VFC = () => {
 
       <section>
         <h2>Pages in Storybook</h2>
-
       </section>
     </article>
   );

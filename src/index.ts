@@ -1,10 +1,6 @@
+import MyCounter from "./components/App";
 
-
-
-import MyCounter from './components/App'
-
-export { MyCounter }
-
+export { MyCounter };
 
 //icons
 // export { default as Icon } from './components/Icon/Icon'
