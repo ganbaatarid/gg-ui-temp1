@@ -1,6 +1,6 @@
-import MyCounter from "./components/App";
 
-export { MyCounter };
+
+
 
 //icons
 // export { default as Icon } from './components/Icon/Icon'
@@ -11,4 +11,4 @@ export { MyCounter };
 export { default as AddIcon } from "./icons/Add";
 
 import { Button } from "./components/Button";
-export { Button }
+export { Button };
