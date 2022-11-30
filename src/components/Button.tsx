@@ -1,5 +1,5 @@
 import React from "react";
-import "./button.css";
+
 
 // import '../stories/button.css';
 
@@ -42,9 +42,7 @@ export const Button = ({
   return (
     <button
       type="button"
-      className={["storybook-button", `storybook-button--${size}`, mode].join(
-        " "
-      )}
+      className=" mb-0 bg-black"
       style={{ backgroundColor }}
       {...props}
     >

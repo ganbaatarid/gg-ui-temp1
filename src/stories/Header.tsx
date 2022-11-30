@@ -49,8 +49,8 @@ export const Header = ({
       <div>
         {user ? (
           <>
-            <span className="welcome">
-              Welcome, <b>{user.name}</b>!
+            <span className="welcome text-blue-800">
+              Welcome,asdf <b>{user.name}</b>!
             </span>
             <Button size="small" onClick={onLogout} label="Log out" />
           </>

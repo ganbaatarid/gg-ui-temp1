@@ -6,7 +6,21 @@ module.exports = {
   "addons": [
     "@storybook/addon-links",
     "@storybook/addon-essentials",
-    "@storybook/addon-interactions"
+
+    {
+      name: '@storybook/addon-postcss',
+      options: {
+        cssLoaderOptions: {
+          importLoaders: 1,
+        },
+        postcssLoaderOptions: {
+          implementation: require('postcss'),
+        },
+      },
+    },
   ],
+  typescript: {
+    check: true, // type-check stories during Storybook build
+  },
   "framework": "@storybook/react"
 }

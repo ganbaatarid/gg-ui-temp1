@@ -1,4 +1,5 @@
 import MyCounter from "./components/App";
+import "../src/index.css";
 
 export { MyCounter };
 
