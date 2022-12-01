@@ -15,5 +15,3 @@ export { Button };
 
 import { Alert } from "./components/Alert/index";
 export { Alert };
-
-

@@ -13,6 +13,7 @@ const Template: Story<Props> = (args) => <Alert {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {
-  message: "testing",
-  variant: "info",
+  label: "Form-Level Message!",
+  variant: "success",
+
 };
