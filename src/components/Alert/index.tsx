@@ -15,8 +15,8 @@ export const Alert: FC<Props> = ({ message, variant = "info" }) => {
     return classes.name === variant;
   });
   return (
-    <div className={`p-4 border rounded ${styling?.style}`} role="alert">
-      <strong className="text-sm font-medium">{` ${message} `}</strong>
+    <div className={` ${styling?.style}`} role="alert">
+      <div className=" text-graphite text-caption 2xl:text-[0.833vw]">{` ${message} `}</div>
     </div>
   );
 };
@@ -24,7 +24,7 @@ export const Alert: FC<Props> = ({ message, variant = "info" }) => {
 const buttonClasses: Array<IButtonClass> = [
   {
     name: "success",
-    style: "text-green-700 rounded border-green-900/10 bg-green-50",
+    style: "bg-green p-10",
   },
   {
     name: "warning",

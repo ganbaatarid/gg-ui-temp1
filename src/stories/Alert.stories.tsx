@@ -13,6 +13,6 @@ const Template: Story<Props> = (args) => <Alert {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {
-  message: "Hi, how are you?",
+  message: "testing",
   variant: "info",
 };
