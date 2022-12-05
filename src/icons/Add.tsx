@@ -1,5 +1,11 @@
-import React from "react";
-const AddIcon = () => {
+import React, { FC } from "react";
+
+export interface AddProps {
+  style: string;
+}
+export const Add: FC<AddProps> = ({
+  style
+}) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -10,10 +16,10 @@ const AddIcon = () => {
       role="img"
       aria-labelledby="addIcon"
     >
-      <path d="M0 7H14" stroke="#1A1817" />
+      <path d="M0 7H14" stroke={`${style}`} />
       <path d="M7 0V14" stroke="#1A1817" />
     </svg>
   );
 };
 
-export default AddIcon;
+export default Add;
