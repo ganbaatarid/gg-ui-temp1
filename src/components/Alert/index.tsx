@@ -3,7 +3,7 @@ import React, { FC } from "react";
 export interface Props {
   label: string;
   variant?: "primary" | "secondary";
-  size?: "small" | "medium"
+  size?: "small" | "medium";
 }
 
 interface IButtonClass {
@@ -15,10 +15,8 @@ interface IButtonClass {
 export const Alert: FC<Props> = ({
   label,
   variant = "primary",
-  size = "small"
+  size = "small",
 }) => {
-
-
   const widthStyle: IButtonClass | undefined = buttonClasses.find((classes) => {
     return classes.widths === size;
   });
@@ -37,11 +35,11 @@ const buttonClasses: Array<IButtonClass> = [
   {
     name: "primary",
     style: "text-graphite bg-green w-fit",
-    widths: 'small'
+    widths: "small",
   },
   {
     name: "secondary",
     style: "text-graphite bg-red",
-    widths: ''
+    widths: "",
   },
 ];

@@ -3,9 +3,7 @@ import React, { FC } from "react";
 export interface AddProps {
   stroke: string;
 }
-export const Add: FC<AddProps> = ({
-  stroke
-}) => {
+export const Add: FC<AddProps> = ({ stroke }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"

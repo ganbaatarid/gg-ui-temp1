@@ -1,10 +1,10 @@
-import type { ComponentProps } from 'react';
-import React from 'react';
-import { styled, css } from '@storybook/theming';
+import type { ComponentProps } from "react";
+import React from "react";
+import { styled, css } from "@storybook/theming";
 
-import { Icons } from './icon';
-import type { IconKey } from './icons';
-import { icons } from './icons';
+import { Icons } from "./icon";
+import type { IconKey } from "./icons";
+import { icons } from "./icons";
 
 const Meta = styled.div`
   color: #666;
@@ -55,12 +55,14 @@ const Header = styled.h2`
 export default {
   component: Icons,
   argTypes: {
-    color: { control: 'color' },
+    color: { control: "color" },
   },
 };
 
-export const Basic = (args: ComponentProps<typeof Icons>) => <Icons {...args} />;
-Basic.args = { icon: 'watch' };
+export const Basic = (args: ComponentProps<typeof Icons>) => (
+  <Icons {...args} />
+);
+Basic.args = { icon: "watch" };
 
 export const Labels = (args: ComponentProps<typeof Icons>) => (
   <>
@@ -87,4 +89,4 @@ export const NoLabels = (args: ComponentProps<typeof Icons>) => (
       ))}
     </List>
   </>
-)
+);

@@ -1,7 +1,7 @@
-import type { FunctionComponent, ComponentProps } from 'react';
-import React from 'react';
-import { styled } from '@storybook/theming';
-import { icons, IconKey } from './icons';
+import type { FunctionComponent, ComponentProps } from "react";
+import React from "react";
+import { styled } from "@storybook/theming";
+import { icons, IconKey } from "./icons";
 
 const Svg = styled.svg`
   display: inline-block;
@@ -15,22 +15,26 @@ const Svg = styled.svg`
 `;
 
 export interface IconsProps extends ComponentProps<typeof Svg> {
-    icon: IconType;
-    useSymbol?: boolean;
+  icon: IconType;
+  useSymbol?: boolean;
 }
 
-export const Icons: FunctionComponent<IconsProps> = ({ icon, useSymbol, ...props }: IconsProps) => {
-    return (
-        <Svg viewBox="0 0 17 18" width="" height="" {...props}>
-            {useSymbol ? <use xlinkHref={`#icon--${icon}`} /> : icons[icon]}
-        </Svg>
-    );
+export const Icons: FunctionComponent<IconsProps> = ({
+  icon,
+  useSymbol,
+  ...props
+}: IconsProps) => {
+  return (
+    <Svg viewBox="0 0 17 18" width="" height="" {...props}>
+      {useSymbol ? <use xlinkHref={`#icon--${icon}`} /> : icons[icon]}
+    </Svg>
+  );
 };
 
 export type IconType = keyof typeof icons;
 
 export interface SymbolsProps extends ComponentProps<typeof Svg> {
-    icons?: IconKey[];
+  icons?: IconKey[];
 }
 
 // export const Symbols = memo<SymbolsProps>(function Symbols({ icons: keys = Object.keys(icons) }) {
