@@ -1,10 +1,10 @@
 import React, { FC } from "react";
 
 export interface AddProps {
-  style: string;
+  stroke: string;
 }
 export const Add: FC<AddProps> = ({
-  style
+  stroke
 }) => {
   return (
     <svg
@@ -16,8 +16,8 @@ export const Add: FC<AddProps> = ({
       role="img"
       aria-labelledby="addIcon"
     >
-      <path d="M0 7H14" stroke={`${style}`} />
-      <path d="M7 0V14" stroke="#1A1817" />
+      <path d="M0 7H14" stroke={`${stroke}`} />
+      <path d="M7 0V14" stroke={`${stroke}`} />
     </svg>
   );
 };

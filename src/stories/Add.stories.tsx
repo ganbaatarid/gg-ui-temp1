@@ -13,5 +13,13 @@ const Template: Story<AddProps> = (args) => <Add {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {
-    style: "#1A1817"
+    stroke: "black"
+}
+export const Black = Template.bind({});
+Black.args = {
+    stroke: "black"
+}
+export const White = Template.bind({});
+White.args = {
+    stroke: "White"
 }
