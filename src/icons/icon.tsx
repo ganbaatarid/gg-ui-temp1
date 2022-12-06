@@ -1,5 +1,5 @@
 import type { FunctionComponent, ComponentProps } from 'react';
-import React, { memo } from 'react';
+import React from 'react';
 import { styled } from '@storybook/theming';
 import { icons, IconKey } from './icons';
 
