@@ -21,20 +21,19 @@ export const Primary = Template.bind({});
 Primary.args = {
   type: "button",
   label: "Button Text",
-  variants: "primary"
+  variants: "primary",
 };
 
 export const Secondary = Template.bind({});
 Secondary.args = {
   type: "button",
   label: "Button Text",
-  variants: "secondary"
+  variants: "secondary",
 };
 
 export const Tertiary = Template.bind({});
 Tertiary.args = {
   type: "button",
   label: "Button Text",
-  variants: "tertiary"
+  variants: "tertiary",
 };
-

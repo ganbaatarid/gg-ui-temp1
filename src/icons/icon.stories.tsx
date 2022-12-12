@@ -1,10 +1,10 @@
-import type { ComponentProps } from 'react';
-import React from 'react';
-import { styled, css } from '@storybook/theming';
+import type { ComponentProps } from "react";
+import React from "react";
+import { styled, css } from "@storybook/theming";
 
-import { Icons } from './icon';
-import type { IconKey } from './icons';
-import { icons } from './icons';
+import { Icons } from "./icon";
+import type { IconKey } from "./icons";
+import { icons } from "./icons";
 
 const Meta = styled.div`
   color: #666;
@@ -39,26 +39,30 @@ const Item = styled.li<{ minimal?: boolean }>`
     `};
 `;
 
-
-
-
 export default {
   component: Icons,
   argTypes: {
-    color: { control: 'color' },
+    color: { control: "color" },
   },
 };
 
-export const Basic = (args: ComponentProps<typeof Icons>) => <Icons {...args} />;
-Basic.args = { icon: 'search' };
+export const Basic = (args: ComponentProps<typeof Icons>) => (
+  <Icons {...args} />
+);
+Basic.args = { icon: "search" };
 
 export const Labels = (args: ComponentProps<typeof Icons>) => (
   <>
-
-    <div className='text-2xl text-primary'> {Object.keys(icons).length} icons</div>
-    <div className='grid grid-cols-6 gap-9'>
+    <div className="text-2xl text-primary">
+      {" "}
+      {Object.keys(icons).length} icons
+    </div>
+    <div className="grid grid-cols-6 gap-9">
       {Object.keys(icons).map((key) => (
-        <div className='flex flex-col items-center justify-center space-y-4' key={key}>
+        <div
+          className="flex flex-col items-center justify-center space-y-4"
+          key={key}
+        >
           <Icons icon={key as IconKey} aria-hidden {...args} />
           <div>{key}</div>
         </div>

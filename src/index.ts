@@ -10,7 +10,7 @@ export { MyCounter };
 // export { Icon };
 export { default as AddIcon } from "./icons/Add";
 
-import { Button } from "./components/Button";
+import { Button } from "./components/Button/index";
 export { Button };
 
 import { Alert } from "./components/Alert/index";

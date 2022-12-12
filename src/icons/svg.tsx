@@ -1,26 +1,24 @@
-
-
-import { styled } from '@storybook/theming';
+import { styled } from "@storybook/theming";
 
 interface SvgProps {
-    inline?: boolean;
+  inline?: boolean;
 }
 
 const Svg = styled.svg<SvgProps>(
-    {
-        // Fix rendering bugs in Chrome for hdpi
-        shapeRendering: 'inherit',
-        transform: 'translate3d(0,0,0)',
-    },
-    ({ inline }) =>
-        inline
-            ? {
-                display: 'inline-block',
-            }
-            : {
-                display: 'block',
-            }
+  {
+    // Fix rendering bugs in Chrome for hdpi
+    shapeRendering: "inherit",
+    transform: "translate3d(0,0,0)",
+  },
+  ({ inline }) =>
+    inline
+      ? {
+          display: "inline-block",
+        }
+      : {
+          display: "block",
+        }
 );
-Svg.displayName = 'Svg';
+Svg.displayName = "Svg";
 
 export { Svg as default };
