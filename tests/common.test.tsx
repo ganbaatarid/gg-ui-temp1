@@ -3,10 +3,10 @@ import { render } from "@testing-library/react";
 
 import "jest-canvas-mock";
 
-// import { MyCounter } from "../src";
+import { Button } from "../src/components/Button/index";
 
-// describe("Common render", () => {
-//   it("renders without crashing", () => {
-//     render(<MyCounter />);
-//   });
-// });
+describe("Common render", () => {
+  it("renders without crashing", () => {
+    render(<Button label="df" />);
+  });
+});
