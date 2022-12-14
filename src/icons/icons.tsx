@@ -2,6 +2,11 @@ import React from "react";
 
 // Icon paths
 export const icons = {
+  minus: (
+    <>
+      <path d="M0 7H14" stroke={`#1A1817`} />
+    </>
+  ),
   add: (
     <>
       <path d="M0 7H14" stroke="#1A1817" />

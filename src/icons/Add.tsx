@@ -1,11 +1,13 @@
 import React, { FC } from "react";
 
 export interface AddProps {
-  stroke: string;
+  className?: string;
+  stroke?: string;
 }
-export const Add: FC<AddProps> = ({ stroke }) => {
+export const Add: FC<AddProps> = ({ className, stroke }) => {
   return (
     <svg
+      className={className}
       xmlns="http://www.w3.org/2000/svg"
       width="100%"
       height="100%"

@@ -1,6 +1,6 @@
 {
   "name": "gg-ui-temp1",
-  "version": "1.3.7",
+  "version": "1.3.9",
   "description": "",
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",
