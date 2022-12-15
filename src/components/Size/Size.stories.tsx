@@ -3,19 +3,19 @@ import { ComponentStory, ComponentMeta } from "@storybook/react";
 
 import { Size } from "./Size";
 
+
 export default {
-    title: "Components/Size",
+    title: "Components/Button",
     component: Size,
 } as ComponentMeta<typeof Size>;
 
 
 const Template: ComponentStory<typeof Size> = (args) => <Size {...args} />;
 
-export const Default = Template.bind({});
+export const Primary = Template.bind({});
 
-Default.args = {
+Primary.args = {
     type: "button",
     label: "XL",
     variants: "primary",
 };
-

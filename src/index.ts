@@ -11,3 +11,5 @@ export { default as AddIcon } from "./icons/Add";
 
 import { Alert } from "./components/Alert/index";
 export { Alert };
+
+export { default as Footer } from "./components/Footer/Footer";
