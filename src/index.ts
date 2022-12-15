@@ -1,5 +1,3 @@
-
-
 //icons
 // export { default as Icon } from './components/Icon/Icon'
 // export type { IconProps } from './components/Icon'
