@@ -7,7 +7,7 @@ const meta: Meta = {
   component: Footer,
   parameters: {
     layout: "fullscreen",
-  }
+  },
 };
 export default meta;
 
@@ -17,10 +17,11 @@ export const Default = Template.bind({});
 Default.args = {
   className: "",
   title: "About Us",
-  description: 'Great cashmere should be comfortable responsibly made, humane and in your budget—and at GOBI Cashmere we’ve proven that it can since 1981.'
+  description:
+    "Great cashmere should be comfortable responsibly made, humane and in your budget—and at GOBI Cashmere we’ve proven that it can since 1981.",
 };
 export const Primary = Template.bind({});
 Primary.args = {
   className: "",
-  description: 'df.'
+  description: "df.",
 };
