@@ -1,6 +1,7 @@
 
 
 import React, { FC } from "react";
+import { Button } from "../Button";
 
 export interface Props {
     valueProp: TraceableProps;
@@ -30,6 +31,10 @@ export const Traceable: FC<Props> = ({
                             <p className="text-12-14 mb-10-10 lg:max-w-[280px] 2xl:max-w-[16.667vw] lg:hidden value-prop:block lg:pr-[2.5rem] 2xl:pr-[2.778vw]">
                                 {description}
                             </p>
+                            <Button
+                                variants="tertiary"
+                                label="Learn More"
+                            />
                         </div>
                     </div>
 

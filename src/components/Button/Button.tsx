@@ -1,5 +1,5 @@
 import * as React from "react";
-import clsx from "clsx";
+import classNames from "classnames";
 interface ButtonProps {
   variants?: "primary" | "secondary" | "tertiary";
   type?: "button" | "submit" | "reset";
@@ -24,10 +24,10 @@ const variantStyles = {
     "text-graphite text-body-text lg:text-body-text-lg 2xl:text-body-text-2xl border-0 rounded-none relative disabled:bg-transparent disabled:text-neutral disabled:before:bg-neutral disabled:hover:before:scale-100 hover:text-subdued before:bg-graphite before:absolute before:w-full before:h-px before:left-0 before:scale-x-100 before:transition-transform before:duration-300 before:top-[calc(100%+2px)]   before:origin-top-left-0-2/4 hover:before:scale-x-0 hover:before:origin-top-left-full-2/4 hover:before:bg-subdued",
 };
 const sizeStyles = {
-  default: "",
-  small: "",
-  medium: "",
-  large: "",
+  default: "w-fit",
+  small: "w-fit",
+  medium: "w-full",
+  large: "w-full",
 };
 
 export const Button = ({
@@ -44,8 +44,8 @@ export const Button = ({
   ...props
 }: ButtonProps) => {
   const buttonClass = disabled
-    ? clsx(variantStyles[variants], sizeStyles[size])
-    : clsx(variantStyles[variants], sizeStyles[size]);
+    ? classNames(variantStyles[variants], sizeStyles[size])
+    : classNames(variantStyles[variants], sizeStyles[size]);
 
   return (
     <button
