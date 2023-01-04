@@ -16,7 +16,6 @@ Primary.args = {
   type: "button",
   label: "Button Text",
   variants: "primary",
-
 };
 
 export const Secondary = Template.bind({});
