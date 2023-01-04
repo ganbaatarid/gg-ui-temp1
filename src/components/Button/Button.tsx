@@ -30,6 +30,12 @@ const sizeStyles = {
   large: "w-full",
 };
 
+const colorStyles = {
+  default: "",
+  black: "",
+  white: "text-white before:bg-white hover:text-white hover:before:bg-white",
+}
+
 export const Button = ({
   variants = "primary",
   type = "button",
@@ -44,8 +50,8 @@ export const Button = ({
   ...props
 }: ButtonProps) => {
   const buttonClass = disabled
-    ? classNames(variantStyles[variants], sizeStyles[size])
-    : classNames(variantStyles[variants], sizeStyles[size]);
+    ? classNames(variantStyles[variants], sizeStyles[size], colorStyles[color])
+    : classNames(variantStyles[variants], sizeStyles[size], colorStyles[color]);
 
   return (
     <button
