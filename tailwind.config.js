@@ -137,5 +137,5 @@ module.exports = {
             },
         },
     },
-    plugins: [require('./plugin')],
+    plugins: [],
 };
