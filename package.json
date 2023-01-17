@@ -1,6 +1,6 @@
 {
   "name": "gg-ui-temp1",
-  "version": "1.4.1",
+  "version": "1.4.90",
   "description": "",
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",
@@ -10,7 +10,7 @@
     "url": "git+https://github.com/ganbaatarid/gg-ui-temp1.git"
   },
   "scripts": {
-    "build": "tailwindcss build ./src/tailwind.css -o ./public/tailwind.css",
+    "build": "yarn build:esm && yarn build:cjs",
     "build:esm": "tsc",
     "build:cjs": "tsc --module commonjs --outDir dist/cjs",
     "lint": "eslint \"{**/*,*}.{js,ts,jsx,tsx}\"",
