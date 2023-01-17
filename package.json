@@ -10,7 +10,7 @@
     "url": "git+https://github.com/ganbaatarid/gg-ui-temp1.git"
   },
   "scripts": {
-    "build": "yarn build:esm && yarn build:cjs",
+    "build": "tailwindcss build ./src/tailwind.css -o ./public/tailwind.css",
     "build:esm": "tsc",
     "build:cjs": "tsc --module commonjs --outDir dist/cjs",
     "lint": "eslint \"{**/*,*}.{js,ts,jsx,tsx}\"",
